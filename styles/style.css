@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.poppins-font-style {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  /* share style */
+  .display-flex{
+    display: flex;
+  }
+  /* dark-1 */
+  .text-gray{
+    color: #3A3A3A;
+  }
+
+/* header style start here  */
+  
+.header{
+  max-width: 1440px;
+  margin: 0px auto;
+}
+.brand{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+
+  .icon-img{
+    width: 19px;
+    height: 19px;
+  }
+  .nav-link{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .nav-item{
+    list-style: none;
+    margin-right: 30px;
+  }
+  .nav-bar{
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    
+  }
+  /* header s camera style start here  */
+.camera-container{
+    align-items: center;
+    gap: 130px;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+
+
+  .camera-title{
+    font-size: 3.25rem;
+    font-weight: 700;
+  }
+  .camera-discription{
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .camera-content{
+    width: 580px;
+    height: 270px;
+    
+    
+  }
+  .img-container{
+    width: 475px;
+    height: 475px;
+    /* border: 1px solid tomato; */
+    margin-top: 50px;
+  }
+  .img-container img{
+    width: 440px;
+    height: 414px;
+    
+    background-image: url(../images/Circle\ design.svg);
+    background-size: cover;
+  }
+  .btn-primary{
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 41px;
+
+background: rgb(224, 44, 109);
+padding: 10px 24px 10px 24px;
+margin: 0px 8px;
+  }
+  .arrow{
+    width: 16px;
+    height: 14px;
+  }
+/* add container start here  */
+.add-container{
+  /* border: 1px solid tomato; */
+  width: 1110px;
+  height: 110px;
+  margin: 0px auto;
+}
+.add-image-container{
+  /* border: 1px solid black; */
+  margin: 35px auto;
+  width: 986px;
+  height: 38px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+/* main style start here  */
+.photo-container{
+  /* border: 2px solid tomato; */
+  width: 1045px;
+  height: 1650px;
+  margin: 0px auto;
+}
+.photo-title{
+  /* border: 1px solid black; */
+  width: 270px;
+  height: 70px;
+  margin: 0px auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.fact-description{
+  font-size: 0.8rem ;
+  font-weight: 700;
+
+}
+.fact-card{
+  width: 300px;
+  height: 280px;
+  padding: 17px 15px 200px 14px;
+  border-radius: 5px;
+
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+background: rgb(255, 255, 255);
+}
+.fact-card img{
+  width: 300px;
+  height: 255px;
+}
+.album-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive section  */
+  @media screen and (max-width:576px){
+    .nav-bar{
+      flex-direction: column;
+    }
+    .nav-item{
+      margin-right: 15px;
+    }
+    .camera-container{
+      flex-direction: column-reverse;
+    }
+    .img-container img{
+    width: 100%;
+    height: auto;
+    }
+    .camera-content{
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      text-align: center;     
+    }
+    .camera-container{
+      gap: 10px;
+    }
+    .img-container{
+      width: 100%;
+      height: auto;
+    }
+    .add-image-container{
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      width: 100px;
+      height: auto;
+      justify-content: center;               
+    }
+    .add-container{
+      width: 100%;
+      height: auto;
+    
+    }
+    .album-container{
+      grid-template-columns: repeat(1, 1fr);
+      gap: 15px;
+      width: 100%;
+      height: 100%;
+      
+    }
+    .fact-card{
+      width: 100%;
+      height: 100%;
+      padding: 5px 5px 5px 5px;
+      
+    }
+    .photo-title{
+      width: 100%;
+      height: auto;
+    }
+    .photo-container{
+      width: 100%;
+      height: 100%;
+    }
+    
+  }
